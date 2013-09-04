@@ -1,6 +1,6 @@
 # Hyper
 
-![alt tag](https://raw.github.com/jawerty/hyper/branch/hyper_title.png)
+![image not loaded...](https://raw.github.com/jawerty/Hyper/branch/hyper_title.png)
 
 A Live, desktop, HTML5 text-editor. You can now code HTML5 websites in real-time on your desktop.
 
