@@ -24,7 +24,7 @@ If you dislike the primary UI color, you can change the color by choosing the 'C
 
 ![image not loaded...](https://raw.github.com/jawerty/Hyper/master/screenshots/5_edit.png)
 
-Overall, the Hyper app is a lightweight development tool that I made to make testing my webpages faster and easier. If you would like to raise an issue/bug or make a pull request, you are more than welcome to and I will do my best to help solve the problem.
+Overall, the Hyper app is a lightweight development tool that I made to make testing my webpages faster and easier. It is not meant to be a complete supplement for Sublime Text and jsfiddle, but if you use it for these purposes that's alright. Also, If you would like to raise an issue/bug or make a pull request, you are more than welcome to and I will do my best to help solve the problem.
 
 Thank you, and happy hacking.
 
