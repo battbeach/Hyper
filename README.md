@@ -22,7 +22,7 @@ Moreover, you can open multiple files and **execute javascript within the page**
 
 If you dislike the primary UI color, you can change the color by choosing the 'Change Color' item in the **View** menu-item. **(not stable/persistent yet)**
 
-![image not loaded...](https://raw.github.com/jawerty/Hyper/master/screenshots/5.png)
+![image not loaded...](https://raw.github.com/jawerty/Hyper/master/screenshots/5_edit.png)
 
 Overall, the Hyper app is a lightweight development tool that I made to make testing my webpages faster and easier. If you would like to raise an issue/bug or make a pull request, you are more than welcome to and I will do my best to help solve the problem.
 
