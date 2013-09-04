@@ -6,7 +6,7 @@
   "keywords": [ "hyper", "html", "html5", "editor", "live", "real-time", "minimalist", "lightweight" ],
   "window": {
     "title": "Hyper",
-    "toolbar": true,
+    "toolbar": false,
     "frame": true,
     "width": 800,
     "show": true,
