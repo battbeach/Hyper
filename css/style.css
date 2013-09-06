@@ -4,19 +4,39 @@
 }
 
 html, body {
-	height: 100%;
-	width: 100%;
+
 }
 
 body {
 	background: #fffcfc; /* Old browsers */
-	background: -moz-linear-gradient(top,  #fffcfc 0%, #eaeaea 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffcfc), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #fffcfc 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #fffcfc 0%,#eaeaea 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #fffcfc 0%,#eaeaea 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #fffcfc 0%,#eaeaea 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcfc', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  #fffcfc 0%, #f4f4f4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffcfc), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fffcfc 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fffcfc 0%,#f4f4f4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fffcfc 0%,#f4f4f4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fffcfc 0%,#f4f4f4 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffcfc', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
+}
+
+i[class^="icon-"]:before {
+	display: inline-block;
+	text-decoration: none;
+}
+
+a {
+	color: #555;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #777;
+}
+
+.screenshot {
+	-moz-box-shadow: 0px 0px 12px 1px #333;
+	-webkit-box-shadow: 0px 0px 12px 1px #333;
+	box-shadow: 0px 0px 12px 1px #333;
+	width: 650px;height:450px;
 }
 
 #wrapper {
@@ -25,7 +45,19 @@ body {
 	box-sizing: border-box;
 	height: inherit;
 	width: inherit;
-	padding: 80px;
+	padding: 60px;
+}
+
+#left_widget {
+	left: 3%;
+	top: 3%;
+	position: fixed;
+}
+
+#right_widget {
+	right: 3%;
+	top: 3%;
+	position:fixed;
 }
 
 #content {
@@ -35,11 +67,33 @@ body {
  
 #title {
 	text-align: center;
+	margin-bottom: 60px;
 }
 
 #subtitle {
 	font-size: 120%;
 }
-#footer {
 
+#main {
+	text-align: center;
+}
+
+#download {
+	margin-left: 50px;
+	margin-top: 60px;
+	text-align: center;
+	letter-spacing: 50px;
+}
+
+#download i {
+	font-size:160px;
+}
+
+#download i:hover {
+	opacity: .5;
+}
+
+#footer {
+	margin-top: 60px;
+	text-align: center;
 }
