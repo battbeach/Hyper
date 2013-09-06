@@ -5,6 +5,8 @@ A Live, desktop, HTML5 text-editor. You can now code HTML5 websites in real-time
 Get it [here](http://jawerty.github.io/Hyper)
 
 # Install
+Hyper is compatible for all Platforms: Windows, Mac, Linux (32-bit)
+
 Go to the Hyper website to download/install -> [http://jawerty.github.io/Hyper](http://jawerty.github.io/Hyper)
 
 **or** if you're a node-webkit developer
