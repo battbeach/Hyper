@@ -1,11 +1,11 @@
 ![image not loaded...](https://raw.github.com/jawerty/Hyper/master/hyper_title.png)
-
+**(COMING SOON)**
 A Live, desktop, HTML5 text-editor. You can now code HTML5 websites in real-time on your desktop.
 
 Currently in **alpha** development and not fully ready for coding.
 
 # Install
-Go to the Hyper website to download/install -> [http://jawerty.github.io/hyper](http://jawerty.github.io/hyper)
+Go to the Hyper website to download/install -> [http://jawerty.github.io/Hyper](http://jawerty.github.io/Hyper)
 
 **or** if you're a developer
 
