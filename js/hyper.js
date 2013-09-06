@@ -12,14 +12,15 @@ if (process.platform === 'darwin') {
 	baseDIR = process.env.HOME
 
 } else if (process.platform === 'win32') {
-	var user_menu = new gui.Menu({ type: 'menubar' });
-	gui.Window.get().menu = user_menu;
+	gui.Window.get().menu = new gui.Menu({ type: 'menubar' });
 	console.log('windows')
-	baseDIR = "C:\\Windows"
+	baseDIR = process.env.HOME
 
 } else {
+	var user_menu = new gui.Menu({ type: 'menubar' });
+	gui.Window.get().menu = user_menu;
 	console.log('not windows or mac')
-	baseDIR = "\\home\\"
+	baseDIR = process.env.HOME
 }
 
 function checkHex(value){
@@ -40,6 +41,7 @@ function saveAction() {
 		path = $(".file-tab[title=selected]").find("label")[0].innerText;
 	} else {
 		path = baseDIR + $(".file-tab[title=selected]").find("label")[0].innerText;
+		$(file_tab).attr("alt", "open");
 	}
 
 	
@@ -106,7 +108,7 @@ $(document).ready(function(){
 
 
 	(function main(){
-		var menu = gui.Window.get().menu;
+		var menu = new gui.Window.get().menu;
 
 		/**menu item creation and handling**/
 		fileItem = new gui.MenuItem({
@@ -125,7 +127,7 @@ $(document).ready(function(){
 		fileSubmenu.append(new gui.MenuItem({ 
 			label: 'New File',
 			click: function() {
-				appendFile("<!DOCTYPE html>\n<html>\n<head>\n\n</head>\n<body>\n\n</body>\n</html>", "/untitled.html", false);
+				appendFile("<!DOCTYPE html>\n<html>\n<head>\n\n</head>\n<body>\n\n</body>\n</html>", "/untitled.html", true);
       			$(".file-tab").trigger("click");
 			}
 		}));
@@ -311,9 +313,54 @@ $(document).ready(function(){
 		  return false;
 		});
 		
+		helpItem = new gui.MenuItem({ 
+			type: 'normal',
+			label: 'Help'
+		});
+
+		var helpSubmenu = new gui.Menu();
+		helpSubmenu.append(new gui.MenuItem({
+			label: 'About',
+			click: function() {
+				var new_win = gui.Window.get(
+				  window.open('http://jawerty.github.com/Hyper')
+				);
+			}
+		}));
+		
+		helpSubmenu.append(new gui.MenuItem({
+			label: 'Developer\'s Website',
+			click: function() {
+				var new_win = gui.Window.get(
+				  window.open('http://jawerty.github.com/')
+				);
+			}
+		}));
+		
+		helpSubmenu.append(new gui.MenuItem({
+			label: 'Github',
+			click: function() {
+				var new_win = gui.Window.get(
+				  window.open('https://github.com/jawerty/Hyper')
+				);
+			}
+		}));
+		
+		helpItem.submenu = helpSubmenu
+		
 		/**menu item insertion**/
-		menu.insert(fileItem, 1);
-		menu.insert(viewItem, 3);
+		
+		if (process.platform == 'win32') {
+			gui.Window.get().menu = menu
+			menu.insert(fileItem, 0);
+			menu.insert(viewItem, 1);
+			menu.append(helpItem);
+		} else {
+			menu.insert(fileItem, 1);
+			menu.insert(viewItem, 3);
+			menu.append(helpItem);
+		}
+		
 	})();
 });
 

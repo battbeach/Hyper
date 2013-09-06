@@ -1,6 +1,6 @@
 {
   "main": "index.html",
-  "name": "hyper",
+  "name": "Hyper",
   "description": "Lightweight real-time HTML5 editor",
   "version": "0.0.1",
   "keywords": [ "hyper", "html", "html5", "editor", "live", "real-time", "minimalist", "lightweight" ],
@@ -24,15 +24,15 @@
    "email": "jawerty210@gmail.com",
    "web": "http://jawerty.github.io",
    "web": "http://jawerty.github.io",
-   "feedback": "https://github.com/jawerty/hyper/issues"
+   "feedback": "https://github.com/jawerty/Hyper/issues"
   }],
   "licenses": [{
     "type": "MIT",
     "url": "http://opensource.org/licenses/MIT"
   }],
-  "bugs": "https://github.com/jawerty/hyper/issues",
+  "bugs": "https://github.com/jawerty/Hyper/issues",
   "repositories": [{
     "type": "git", 
-    "url": "git@github.com:jawerty/hyper.git"
+    "url": "git@github.com:jawerty/Hyper.git"
   }]
 }
