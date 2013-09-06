@@ -23,13 +23,17 @@ i[class^="icon-"]:before {
 	text-decoration: none;
 }
 
+i[class^="icon-"]:hover {
+	color: #E36D6D;
+}
+
 a {
 	color: #555;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #777;
+	color: #E36D6D;
 }
 
 .screenshot {
@@ -79,18 +83,25 @@ a:hover {
 }
 
 #download {
-	margin-left: 50px;
 	margin-top: 60px;
 	text-align: center;
-	letter-spacing: 50px;
 }
 
-#download i {
+#download_icons {
+	margin-top: 60px;
+	letter-spacing: 50px;
+	margin-left: 50px;
+
+}
+
+#download_icons i {
 	font-size:160px;
 }
 
-#download i:hover {
-	color: ;
+#download_message {
+	font-size: 140%;
+	margin-top: 60px;
+	text-align: center;
 }
 
 #footer {
