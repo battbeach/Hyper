@@ -1,6 +1,6 @@
 {
   "main": "index.html",
-  "name": "Hyper",
+  "name": "hyper",
   "description": "Lightweight real-time HTML5 editor",
   "version": "0.0.1",
   "keywords": [ "hyper", "html", "html5", "editor", "live", "real-time", "minimalist", "lightweight" ],
@@ -15,7 +15,6 @@
     "min_width": 400,
     "min_height": 200
   },
-  //"snapshot": "js/hyper.bin",
   "webkit": {
     "plugin": true
   },
