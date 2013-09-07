@@ -1,3 +1,4 @@
+//require's and global variables
 var gui = require('nw.gui');
 var fs = require('fs');
 var util = require('util');
