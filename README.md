@@ -31,7 +31,7 @@ Overall, the Hyper app is a lightweight development tool that I made to make tes
 Thank you, and happy hacking.
 
 # Development
-Hyper is built with node-webkit and jquery.
+Hyper is built with node.js (node-webkit) and jquery.
 
 # LICENSE
 
